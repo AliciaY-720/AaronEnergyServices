@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "rest_framework",
 
     "projects.apps.ProjectsConfig",
+    "contacts.apps.ContactsConfig",
 ]
 
 MIDDLEWARE = [
