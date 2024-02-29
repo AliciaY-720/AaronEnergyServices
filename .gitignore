@@ -1,0 +1,27 @@
+# Ignore compiled Python files
+*.pyc
+
+# Ignore the virtual environment directory
+venv/
+
+# Ignore the database file
+db.sqlite3
+
+# Ignore the media directory (where user-uploaded files are stored)
+media/
+
+# Ignore the staticfiles directory (where Django collects static files)
+staticfiles/
+
+# Ignore the .env file (contains sensitive information)
+.env
+
+# Ignore any local settings file
+local_settings.py
+
+# Ignore IDE and text editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
