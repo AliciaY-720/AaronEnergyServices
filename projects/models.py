@@ -12,7 +12,7 @@ class Project(models.Model):
 
 class Image(models.Model):
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
-    image = models.ImageField(upload_to='project_images/')
+    image_url = models.TextField(max_length=1000, default="")
 
     def __str__(self):
         return f"Image for {self.project.name}"
