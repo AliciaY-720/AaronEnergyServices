@@ -1,0 +1,28 @@
+<div class="hover-navigation bg-white m-b30">
+    <ul>
+        <li><a routerLink="/accordian" data-hover="Accordian">Accordian</a></li>
+        <li><a routerLink="/buttons" data-hover="Button">Button</a></li>
+        <li><a routerLink="/icon-box" data-hover="Icon box style">Icon box style</a></li>
+        <li><a routerLink="/list-group" data-hover="List Group">List Group</a></li>
+        <li><a routerLink="/modal-popup" data-hover="Modal popup">Modal popup</a></li>
+        <li><a routerLink="/tabs" data-hover="Tabs">Tabs</a></li>
+        <li><a routerLink="/tables" data-hover="Table">Table</a></li>
+        <li><a routerLink="/videos" data-hover="Video">Video </a></li>
+        <li><a routerLink="/icon-font" data-hover="Icon font">Icon font</a></li>
+    </ul>
+</div>
+
+<div class="owl-carousal inner-testimonial">
+    <div class="item" *ngFor="let object of testimonials">
+        <div class="inner-client-says">
+
+            <img src="{{object.image}}" alt="" class="profile" />
+            <div class="inner-client-info">
+                <h4>{{object.name}} -</h4>
+                <h6>{{object.designation}}</h6>
+                <blockquote>{{object.quote}}</blockquote>
+            </div>
+
+        </div>
+    </div>
+</div>

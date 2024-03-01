@@ -1,0 +1,14 @@
+<div class="section-full p-tb80 bg-gray inner-page-padding">
+    <div class="container-fluid">
+        <div class="section-content">            
+            <div class="work-carousal-outer">
+                <div class="owl-carousal work-carousal owl-btn-vertical-center">
+                    <!-- COLUMNS 1 -->
+                    <div class="item mt-box" *ngFor="let object of data">
+                        <app-project-box1 [data]="object"></app-project-box1>
+                    </div>                                                                                                                              
+                 </div>
+            </div> 
+         </div>
+     </div>
+ </div> 

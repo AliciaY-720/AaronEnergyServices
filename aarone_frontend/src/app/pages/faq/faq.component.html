@@ -1,0 +1,54 @@
+<div class="page-wraper">  
+      	
+    <!-- HEADER START -->
+    <app-header1></app-header1>
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div class="page-content">
+    
+        <!-- INNER PAGE BANNER -->
+        <app-banner1 [data]="banner"></app-banner1>
+        <!-- INNER PAGE BANNER END -->
+         
+        <!-- SECTION CONTENTG START -->
+        <div class="section-full p-t80 p-b80 inner-page-padding">
+            <div class="container">
+                <div class="faq-1 bg-gray  p-a50">
+                    <!-- TITLE START -->
+                    <div class="section-head"> 
+                        <div class="mt-separator-outer separator-center">
+                            <div class="mt-separator">
+                                <h2 class="text-uppercase sep-line-one ">FAQ</h2>
+                            </div>
+                        </div>
+                    </div>                  
+                    <!-- TITLE END -->                                                   
+
+
+
+                    <!-- Accordian -->
+                    <div class="mt-accordion acc-bg-white" id="accordion5">
+                    
+                        <div class="panel mt-panel" *ngFor="let object of faq">
+                            <app-accordian-box1 [data]="object"></app-accordian-box1>
+                        </div>                        
+                                                            
+                    </div>
+                </div>
+
+             
+            </div>
+        </div>
+        <!-- SECTION CONTENT END -->
+        
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1></app-footer1>
+    <!-- FOOTER END -->
+    
+</div>
+
+<app-loader></app-loader>

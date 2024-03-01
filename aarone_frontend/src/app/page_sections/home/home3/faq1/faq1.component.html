@@ -1,0 +1,59 @@
+<div class="section-full some-faq-wrap p-t80 p-b50 bg-white inner-page-padding">
+
+    <div class="container">
+
+
+        <!-- IMAGE Carousal START -->
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+
+                    <!-- TITLE START -->
+                    <div class="section-head">
+                        <div class="mt-separator-outer separator-left">
+                            <div class="mt-separator">
+                                <h2 class="text-uppercase sep-line-one "><span
+                                        class="font-weight-300 text-primary">Some</span> FAQ</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TITLE END -->
+
+                    <div class="section-content p-b30">
+                        <div class="mt-accordion acc-bg-gray" id="accordion5">
+                            <div class="panel mt-panel" *ngFor="let object of data.faq">
+                                <app-accordian-box1 [data]="object"></app-accordian-box1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+
+                    <!-- TITLE START -->
+                    <div class="section-head">
+                        <div class="mt-separator-outer separator-left">
+                            <div class="mt-separator">
+                                <h2 class="text-uppercase sep-line-one "><span
+                                        class="font-weight-300 text-primary">Our</span> Solution</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TITLE END -->
+                    <div class="row">
+                        <div class="col-md-6" *ngFor="let object of data.solutions">
+                            <app-solution-box1 [data]="object"></app-solution-box1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- FAQ -->
+
+
+
+
+
+
+</div>
