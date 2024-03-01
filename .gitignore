@@ -25,3 +25,46 @@ local_settings.py
 *.sublime-project
 *.sublime-workspace
 *.komodoproject
+
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/aarone_frontend/dist
+/aarone_frontend/tmp
+/aarone_frontend/out-tsc
+/aarone_frontend/bazel-out
+
+# Node
+/aarone_frontend/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/aarone_frontend/.angular/cache
+.sass-cache/
+/aarone_frontend/connect.lock
+/aarone_frontend/coverage
+/aarone_frontend/libpeerconnection.log
+testem.log
+/aarone_frontend/typings
+
+# System files
+.DS_Store
+Thumbs.db
