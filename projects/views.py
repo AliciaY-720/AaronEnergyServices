@@ -3,31 +3,31 @@ from .models import Project, Image, Tag
 from .serializers import ProjectSerializer, ImageSerializer, TagSerializer
 
 
-class ProjectListCreateView(generics.ListCreateAPIView):
+class ProjectListView(generics.ListAPIView):
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
 
 
-class ProjectDetailView(generics.RetrieveUpdateDestroyAPIView):
+class ProjectDetailView(generics.RetrieveAPIView):
     queryset = Project.objects.all()
     serializer_class = ProjectSerializer
 
 
-class ImageListCreateView(generics.ListCreateAPIView):
+class ImageListView(generics.ListAPIView):
     queryset = Image.objects.all()
     serializer_class = ImageSerializer
 
 
-class ImageDetailView(generics.RetrieveUpdateDestroyAPIView):
+class ImageDetailView(generics.RetrieveAPIView):
     queryset = Image.objects.all()
     serializer_class = ImageSerializer
 
 
-class TagListCreateView(generics.ListCreateAPIView):
+class TagListView(generics.ListAPIView):
     queryset = Tag.objects.all()
     serializer_class = TagSerializer
 
 
-class TagDetailView(generics.RetrieveUpdateDestroyAPIView):
+class TagDetailView(generics.RetrieveAPIView):
     queryset = Tag.objects.all()
     serializer_class = TagSerializer
