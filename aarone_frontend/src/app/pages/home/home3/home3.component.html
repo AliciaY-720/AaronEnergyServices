@@ -1,0 +1,61 @@
+<div id="bg" class="boxed bg-repeat" style="background-image:url(assets/images/background/bg-boxed.jpg)">
+    <div class="page-wraper">
+
+        <!-- HEADER START -->
+        <app-header1></app-header1>
+        <!-- HEADER END -->
+
+        <!-- CONTENT START -->
+        <div class="page-content">
+
+            <!-- SLIDER START -->
+            <app-slider3></app-slider3>
+            <!-- SLIDER END -->
+
+            <!-- ABOUT COMPANY SECTION START -->
+            <app-about3 [data]="about" title="0"></app-about3>
+            <!-- ABOUT COMPANY SECTION END -->
+
+            <!-- OUR SPECIALLIZATION START -->
+            <app-specializations3 [data]="specializations"></app-specializations3>
+            <!-- OUR SPECIALLIZATION END -->
+
+            <!-- OUR MISSION START -->
+            <app-mission1></app-mission1>
+            <!-- OUR MISSION  END -->
+
+            <!-- CALL US SECTION START -->
+            <app-call-us1></app-call-us1>
+            <!-- CALL US SECTION END -->
+
+            <!-- OUR All SERVICES START -->
+            <app-services3 [data]="services"></app-services3>
+            <!-- OUR All SERVICES END -->
+
+            <!-- SECTION PROJECTS START -->
+            <app-projects3 [data]="projects"></app-projects3>
+            <!-- SECTION PROJECTS END  -->
+
+            <!-- ABOUT COMPANY SECTION START -->
+            <app-about4 [data]="about2"></app-about4>
+            <!-- ABOUT COMPANY SECTION END -->
+
+            <!-- OUR STORY SECTION START -->
+            <app-story1 [data]="story"></app-story1>
+            <!-- OUR STORY SECTION END -->
+
+            <!-- FAQ START -->
+            <app-faq1 [data]="faq"></app-faq1>
+            <!-- FAQ END -->
+
+        </div>
+        <!-- CONTENT END -->
+
+        <!-- FOOTER START -->
+        <app-footer1></app-footer1>
+        <!-- FOOTER END -->
+
+    </div>
+</div>
+
+<app-loader></app-loader>

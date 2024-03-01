@@ -1,0 +1,22 @@
+<div class="section-full p-tb80 inner-page-padding">
+    <!-- GALLERY CONTENT START -->
+    <div class="container clearfix">
+        <div class="portfolio-wrap mfp-gallery news-masonry clearfix row">
+                <!-- COLUMNS 1 -->
+                <div class="masonry-item col-md-4 col-sm-6" *ngFor="let object of data">
+                    <app-blog-box4 [data]="object"></app-blog-box4>
+                </div>                                 
+        </div>
+        <ul class="pagination m-tb0">
+           <li><a href="javascript:void(0);">«</a></li>
+           <li><a href="javascript:void(0);">1</a></li>
+           <li><a href="javascript:void(0);">2</a></li>
+           <li><a href="javascript:void(0);">3</a></li>
+           <li><a href="javascript:void(0);">4</a></li>
+           <li><a href="javascript:void(0);">5</a></li>
+           <li><a href="javascript:void(0);">»</a></li>
+        </ul>                                  
+     </div>
+    <!-- GALLERY CONTENT END -->
+
+</div>

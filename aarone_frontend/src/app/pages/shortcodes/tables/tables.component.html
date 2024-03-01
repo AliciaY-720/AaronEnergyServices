@@ -1,0 +1,253 @@
+<div class="page-wraper">
+
+    <!-- HEADER START -->
+    <app-header1></app-header1>
+    <!-- HEADER END -->
+
+    <!-- CONTENT START -->
+    <div class="page-content">
+
+        <!-- INNER PAGE BANNER -->
+        <app-banner1 [data]="banner"></app-banner1>
+        <!-- INNER PAGE BANNER END -->
+
+        <!-- SECTION CONTENTG START -->
+        <div class="section-full p-tb80 inner-page-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <app-left-sidebar1></app-left-sidebar1>
+                    </div>
+                    <div class="col-md-9 col-sm-8">
+
+                        <div class="section-content m-b50">
+
+                            <!-- TITLE START -->
+                            <div class="section-head">
+                                <div class="mt-separator-outer separator-left">
+                                    <div class="mt-separator">
+                                        <h2 class="text-black text-uppercase sep-line-one "><span
+                                                class="font-weight-300 text-primary">Table </span> Responsive</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TITLE END -->
+                            <!-- TABLE RESPONSIVE -->
+                            <div id="no-more-tables">
+                                <table class=" table-striped table-condensed cf mt-responsive-table">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th>Code</th>
+                                            <th>Company</th>
+                                            <th class="numeric">Price</th>
+                                            <th class="numeric">Change</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Code">Code-1</td>
+                                            <td data-title="Company">Alfreds Futterkiste</td>
+                                            <td data-title="Price" class="numeric">$1.38</td>
+                                            <td data-title="Change" class="numeric">-0.01</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Code">Code-2</td>
+                                            <td data-title="Company">Alimentari Riuniti</td>
+                                            <td data-title="Price" class="numeric">$1.15</td>
+                                            <td data-title="Change" class="numeric">+0.02</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Code">Code-3</td>
+                                            <td data-title="Company">Ernst Handel</td>
+                                            <td data-title="Price" class="numeric">$4.00</td>
+                                            <td data-title="Change" class="numeric">-0.04</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Code">Code-4</td>
+                                            <td data-title="Company">Magazzini Alimentari</td>
+                                            <td data-title="Price" class="numeric">$3.00</td>
+                                            <td data-title="Change" class="numeric">+0.06</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- TABLE CONDENSED -->
+                        <div class="section-content m-b50">
+
+                            <!-- TITLE START -->
+                            <div class="section-head">
+                                <div class="mt-separator-outer separator-left">
+                                    <div class="mt-separator">
+                                        <h2 class="text-black text-uppercase sep-line-one "><span
+                                                class="font-weight-300 text-primary">Bordered </span> Style</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TITLE END -->
+
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th>Contact</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Alfreds Futterkiste</td>
+                                        <td>Centro comercial</td>
+                                        <td>Futterkiste@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alimentari Riuniti</td>
+                                        <td>Moe</td>
+                                        <td>Riuniti@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ernst Handel</td>
+                                        <td>Island Trading</td>
+                                        <td>Handel@example.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- TABLE CONTEXTUAL CLASSES -->
+                        <div class="section-content m-b50">
+                            <!-- TITLE START -->
+                            <div class="section-head">
+                                <div class="mt-separator-outer separator-left">
+                                    <div class="mt-separator">
+                                        <h2 class="text-black text-uppercase sep-line-one "><span
+                                                class="font-weight-300 text-primary">Hover </span> Style</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TITLE END -->
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th>Contact</th>
+                                        <th>Email</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Alfreds Futterkiste</td>
+                                        <td>Centro comercial</td>
+                                        <td>Alfreds@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alimentari Riuniti</td>
+                                        <td>Moe</td>
+                                        <td>Riuniti@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ernst Handel</td>
+                                        <td>Island Trading</td>
+                                        <td>Handel@example.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- TABLE CONDENSED -->
+                        <div class="section-content m-b50">
+                            <!-- TITLE START -->
+                            <div class="section-head">
+                                <div class="mt-separator-outer separator-left">
+                                    <div class="mt-separator">
+                                        <h2 class="text-black text-uppercase sep-line-one "><span
+                                                class="font-weight-300 text-primary">Basic </span> Style</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TITLE END -->
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th>Contact</th>
+                                        <th>Country</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Alfreds Futterkiste</td>
+                                        <td>Centro comercial</td>
+                                        <td>Alfreds@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alimentari Riuniti</td>
+                                        <td>Moe</td>
+                                        <td>Riuniti@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ernst Handel</td>
+                                        <td>Island Trading</td>
+                                        <td>Ernst@example.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- TABLE CONTEXTUAL CLASSES -->
+                        <div class="section-content m-b0">
+                            <!-- TITLE START -->
+                            <div class="section-head">
+                                <div class="mt-separator-outer separator-left">
+                                    <div class="mt-separator">
+                                        <h2 class="text-black text-uppercase sep-line-one "><span
+                                                class="font-weight-300 text-primary">Striped</span> Rows</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- TITLE END -->
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th>Contact</th>
+                                        <th>Country</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Alfreds Futterkiste</td>
+                                        <td>Centro comercial</td>
+                                        <td>Alfreds@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alimentari Riuniti</td>
+                                        <td>Moe</td>
+                                        <td>Riuniti@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ernst Handel</td>
+                                        <td>Island Trading</td>
+                                        <td>Ernst@example.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- SECTION CONTENT END -->
+
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1></app-footer1>
+    <!-- FOOTER END -->
+
+</div>
+
+<app-loader></app-loader>

@@ -1,0 +1,30 @@
+<div class="page-wraper"> 
+       	
+    <!-- HEADER START -->
+    <app-header1></app-header1>
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div class="page-content">
+        <!-- INNER PAGE BANNER -->
+        <app-banner1 [data]="banner"></app-banner1>
+        <!-- INNER PAGE BANNER END -->
+        
+        <!-- SECTION CONTENT START -->
+        <app-project-detail-section [data]="projectDetail"></app-project-detail-section>
+        <!-- SECTION CONTENT END  -->
+        
+        <!-- Similar projects START -->
+        <app-similar-projects1 [data]="similarProjects"></app-similar-projects1>   
+        <!-- Similar projects END -->            
+
+    </div>
+    <!-- CONTENT END -->
+    
+    <!-- FOOTER START -->
+    <app-footer1></app-footer1>
+    <!-- FOOTER END -->
+    
+</div>
+
+<app-loader></app-loader>
