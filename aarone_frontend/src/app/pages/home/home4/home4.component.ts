@@ -106,7 +106,7 @@ export class Home4Component implements OnInit {
   services = [
     {
       icon: "flaticon-city",
-      title: "Rooms & Halls",
+      title: "Hydraulic System",
       description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
     },
     {

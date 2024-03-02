@@ -14,8 +14,8 @@ export class AboutUs1Component implements OnInit {
 
   banner = {
     image: "assets/images/banner/1.jpg",
-    title: "Creating quality urban lifestyles, building stronger communities.",
-    page: "About 1"
+    title: "Where Precision Meets Comfort: Electrical, HVAC, Heating & Cooling, Nature Gas and Hydraulic Mastery!",
+    page: "About Us"
   }
 
   about = {
