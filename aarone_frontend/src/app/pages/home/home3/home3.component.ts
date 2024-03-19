@@ -27,10 +27,10 @@ export class Home3Component implements OnInit {
         image: "assets/images/gallery/portrait/pic7.jpg"
       }
     ],
-    experience: "25",
-    author: "David Houkr",
+    experience: "15",
+    author: "Aaron Qiu",
     sign: "assets/images/Signature+Black.png",
-    designation: "Architect & Founder"
+    designation: "Master Electrician & Founder"
   }
 
   specializations = [

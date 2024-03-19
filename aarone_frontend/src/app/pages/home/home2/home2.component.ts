@@ -81,8 +81,8 @@ export class Home2Component implements OnInit {
   ourValue = {
     video: "https://player.vimeo.com/video/34741214?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0",
     sign: "assets/images/Signature+Black.png",
-    author: "David Houkr",
-    designation: "Architect & Founder"
+    author: "Aaron Qiu",
+    designation: "Master Electrician & Founder"
   }
 
   services = [

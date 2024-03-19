@@ -13,7 +13,7 @@ export class AboutUs1Component implements OnInit {
   }
 
   banner = {
-    image: "assets/images/banner/1.jpg",
+    image: "https://github.com/AliciaY-720/aaronenergy.github.io/blob/main/images/banner.jpg?raw=true",
     title: "Where Precision Meets Comfort: Electrical, HVAC, Heating & Cooling, Nature Gas and Hydraulic Mastery!",
     page: "About Us"
   }
@@ -33,10 +33,10 @@ export class AboutUs1Component implements OnInit {
         image: "assets/images/gallery/portrait/pic7.jpg"
       }
     ],
-    experience: "25",
-    author: "David Houkr",
+    experience: "15",
+    author: "Aaron Qiu",
     sign: "assets/images/Signature+Black.png",
-    designation: "Architect & Founder"
+    designation: "Master Electrician & Founder"
   }
 
   specializations = [
