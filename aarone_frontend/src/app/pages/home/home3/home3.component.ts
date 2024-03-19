@@ -27,10 +27,10 @@ export class Home3Component implements OnInit {
         image: "assets/images/gallery/portrait/pic7.jpg"
       }
     ],
-    experience: "25",
-    author: "David Houkr",
+    experience: "15",
+    author: "Aaron Qiu",
     sign: "assets/images/Signature+Black.png",
-    designation: "Architect & Founder"
+    designation: "Master Electrician & Founder"
   }
 
   specializations = [
@@ -54,22 +54,22 @@ export class Home3Component implements OnInit {
   services = [
     {
       icon: "flaticon-city",
-      title: "Rooms & Halls",
+      title: "Electrical",
       description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
     },
     {
       icon: "flaticon-paint",
-      title: "Renovation",
+      title: "Mechanical",
       description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
     },
     {
       icon: "flaticon-crane",
-      title: "Construction",
+      title: "Nature Gas",
       description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
     },
     {
       icon: "flaticon-decorating",
-      title: "Interior",
+      title: "Hydraulic System",
       description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
     },
     {
