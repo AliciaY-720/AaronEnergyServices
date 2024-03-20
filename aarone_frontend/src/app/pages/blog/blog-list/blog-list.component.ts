@@ -92,7 +92,7 @@ export class BlogListComponent implements OnInit {
         date: "30",
         month: "Apr",
         comments: "09",
-        title: "Helping you and your house become better acquainted."
+        title: "Helping you and your project become better acquainted."
       }
     ],
     clients: [

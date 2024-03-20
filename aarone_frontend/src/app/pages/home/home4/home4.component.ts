@@ -191,7 +191,7 @@ export class Home4Component implements OnInit {
       month: "April",
       author: "John",
       comments: "0",
-      title: "Helping you and your house become better acquainted.",
+      title: "Helping you and your project become better acquainted.",
       description: "Same as saying through shrinking from toil and pain these cases perfectly simple."
     },
     {
