@@ -13,7 +13,7 @@ export class ServicesComponent implements OnInit {
   }
 
   banner = {
-    image: "assets/images/banner/1.jpg",
+    image: "assets/images/background/bg-site2.jpg",
     title: "Diversified services. Unvarying quality.",
     page: "Services"
   }
@@ -89,16 +89,16 @@ export class ServicesComponent implements OnInit {
     experience: "15",
     exData: [
       {
-        title: "Architecher",
-        percent: "85"
+        title: "Residential",
+        percent: "37"
       },
       {
-        title: "Construction",
-        percent: "78"
+        title: "Commercial",
+        percent: "31"
       },
       {
-        title: "Interior",
-        percent: "40"
+        title: "Industrial",
+        percent: "32"
       }
     ]
   }
