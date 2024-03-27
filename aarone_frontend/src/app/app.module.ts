@@ -116,6 +116,7 @@ import { Projects7Component } from './page_sections/projects/projects7/projects7
 import { LoaderDirective } from './directives/loader.directive';
 import { LoaderComponent } from './section_elements/loader/loader.component';
 import { SafePipe } from './pipes/safe.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -234,6 +235,7 @@ import { SafePipe } from './pipes/safe.pipe';
     SafePipe
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     GoogleMapsModule
