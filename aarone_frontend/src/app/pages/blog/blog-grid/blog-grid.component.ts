@@ -32,7 +32,7 @@ export class BlogGridComponent implements OnInit {
       image: "assets/images/blog/blog-grid/pic1.jpg",
       date: "16",
       month: "Apr",
-      title: "Helping you and your house become better acquainted.",
+      title: "Helping you and your project become better acquainted.",
       author: "John",
       comments: "0",
       description: "Same as saying through shrinking from toil and pain these cases perfectly simple."

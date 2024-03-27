@@ -13,7 +13,7 @@ export class ServicesComponent implements OnInit {
   }
 
   banner = {
-    image: "assets/images/banner/1.jpg",
+    image: "assets/images/background/bg-site2.jpg",
     title: "Diversified services. Unvarying quality.",
     page: "Services"
   }
@@ -22,7 +22,7 @@ export class ServicesComponent implements OnInit {
     {
       image: "assets/images/services/1.jpg",
       title: "Concept and Design",
-      subtitle: "Est notare quam littera gothica, quam nunc putamus parum claram."
+      subtitle: "We provide a comprehensive range of electrical services, covering everything from the installation and maintenance of electrical systems to troubleshooting and upgrades. Our team of skilled electricians ensures the safe and efficient operation of electrical systems in residential, commercial, and industrial settings."
     },
     {
       image: "assets/images/services/2.jpg",
@@ -38,66 +38,67 @@ export class ServicesComponent implements OnInit {
 
   services = [
     {
-      icon: "flaticon-city",
-      title: "Rooms & Halls",
-      description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
-    },
-    {
-      icon: "flaticon-paint",
-      title: "Renovation",
-      description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
+      icon: "flaticon-drill",
+      title: "Electrical",
+      description: "We provide a comprehensive range of electrical services, covering everything from the installation and maintenance of electrical systems to troubleshooting and upgrades. Our team of skilled electricians ensures the safe and efficient operation of electrical systems in residential, commercial, and industrial settings."
     },
     {
       icon: "flaticon-crane",
-      title: "Construction",
-      description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
+      title: "Mechanical",
+      description: "We provide a comprehensive range of mechanical services, including HVAC (Heating, Ventilation, and Air Conditioning) as well as heating and cooling solutions. Our expertise extends to installation, maintenance, and repair, ensuring optimal comfort and efficiency for residential, commercial, and industrial clients."
     },
     {
-      icon: "flaticon-decorating",
-      title: "Interior",
-      description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
+      icon: "flaticon-wrench",
+      title: "Natural Gas",
+      description:  
+      "We are industry leaders in natural gas services, offering comprehensive installation, maintenance, and repair solutions. Our qualified technicians prioritize safety and reliability, ensuring optimal operation of natural gas systems for residential, commercial, and industrial clients."
+    },
+    {
+      icon: "flaticon-pipe",
+      title: "Hydraulic System",
+      description: "We excel in hydraulic systems, encompassing floor water heating and snow melting solutions. Our expertise spans installation, maintenance, and repair, ensuring effective operation for various applications in residential, commercial, and industrial settings."
     },
     {
       icon: "flaticon-chart",
       title: "Professional Opinion",
-      description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
+      description: "Moreover, we offer professional consultations and opinions, drawing upon our extensive industry expertise to provide insightful guidance. Our goal is to empower clients with informed decisions and optimal solutions tailored to their specific requirements and preferences."
     },
     {
       icon: "flaticon-sketch",
       title: "Accurate Engineering",
-      description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
+      description: "Providing precise engineering solutions tailored to your needs. Our dedicated team utilizes advanced techniques and expertise to ensure precision, accuracy, and efficiency in every project, delivering superior results that consistently exceed expectations."
     },
-    {
-      icon: "flaticon-builder",
-      title: "General Builder",
-      description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
-    },
-    {
-      icon: "flaticon-drill",
-      title: "Electricity",
-      description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
-    },
-    {
-      icon: "flaticon-art-and-design",
-      title: "Refurbishment",
-      description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
-    }
+    // {
+    //   icon: "flaticon-builder",
+    //   title: "General Builder",
+    //   description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
+    // },
+    // {
+    //   icon: "flaticon-drill",
+    //   title: "Electricity",
+    //   description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
+    // },
+    // {
+    //   icon: "flaticon-art-and-design",
+    //   title: "Refurbishment",
+    //   description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
+    // }
   ]
 
   about = {
     experience: "15",
     exData: [
       {
-        title: "Architecher",
-        percent: "85"
+        title: "Residential",
+        percent: "37"
       },
       {
-        title: "Construction",
-        percent: "78"
+        title: "Commercial",
+        percent: "31"
       },
       {
-        title: "Interior",
-        percent: "40"
+        title: "Industrial",
+        percent: "32"
       }
     ]
   }

@@ -50,8 +50,8 @@ export class Home1Component implements OnInit {
 
   ourValue = {
     author: {
-      name: "David Houkr",
-      designation: "Architect & Founder",
+      name: "Aaron Qiu",
+      designation: "Master Electrician & Founder",
       sign: "assets/images/Signature+Black.png"
     },
     video: "https://player.vimeo.com/video/34741214?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0",

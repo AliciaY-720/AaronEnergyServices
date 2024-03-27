@@ -13,55 +13,55 @@ export class AboutUs1Component implements OnInit {
   }
 
   banner = {
-    image: "assets/images/banner/1.jpg",
-    title: "Creating quality urban lifestyles, building stronger communities.",
-    page: "About 1"
+    image: "https://github.com/AliciaY-720/aaronenergy.github.io/blob/main/images/banner.jpg?raw=true",
+    title: "Where Precision Meets Comfort: Electrical, HVAC, Heating & Cooling, Nature Gas and Hydraulic Mastery!",
+    page: "About Us"
   }
 
   about = {
     slides: [
       {
-        image: "assets/images/gallery/portrait/pic4.jpg"
+        image: "https://github.com/AliciaY-720/aaronenergy.github.io/blob/main/images/webwxgetmsgimg6.jpg?raw=true"
       },
       {
-        image: "assets/images/gallery/portrait/pic5.jpg"
+        image: "https://github.com/AliciaY-720/aaronenergy.github.io/blob/main/images/IMG_4008%20.jpg?raw=true"
       },
       {
-        image: "assets/images/gallery/portrait/pic6.jpg"
+        image: "https://github.com/AliciaY-720/aaronenergy.github.io/blob/main/images/IMG_0914.JPG?raw=true"
       },
       {
-        image: "assets/images/gallery/portrait/pic7.jpg"
+        image: "https://github.com/AliciaY-720/aaronenergy.github.io/blob/main/images/IMG_4027.jpg?raw=true"
       }
     ],
-    experience: "25",
-    author: "David Houkr",
+    experience: "15",
+    author: "Aaron Qiu",
     sign: "assets/images/Signature+Black.png",
-    designation: "Architect & Founder"
+    designation: "Master Electrician & Founder"
   }
 
   specializations = [
     {
       serial: "1",
       icon: "assets/images/icon/crane-1.png",
-      title: "Building \nConstruction",
+      title: "Mechanical",
       description: "lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident."
     },
     {
       serial: "2",
-      icon: "assets/images/icon/renovation.png",
-      title: "Building \nRenovation",
+      icon: "assets/images/icon/idea.png",
+      title: "Electrical",
       description: "lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident."
     },
     {
       serial: "3",
       icon: "assets/images/icon/toolbox.png",
-      title: "Building \nMaintenance",
+      title: "Natural Gas",
       description: "lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident."
     },
     {
       serial: "4",
-      icon: "assets/images/icon/compass.png",
-      title: "Architecture \nDesign",
+      icon: "assets/images/icon/plumb-bob.png",
+      title: "Hydraulic System",
       description: "lorem Ipsum available, but the majority have suffered alterati on in some form, by ious by accident."
     }
   ]

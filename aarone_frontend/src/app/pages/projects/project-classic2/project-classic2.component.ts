@@ -40,7 +40,7 @@ export class ProjectClassic2Component implements OnInit {
     {
       category: "cat-4",
       image: "assets/images/projects/square/pic5.jpg",
-      title: "Rooms & Halls",
+      title: "Hydraulic System",
       description: "Lorem ipsum dolor sitamet, consectetur adipisicing elito, sed do eiusmod."
     },
     {
