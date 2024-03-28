@@ -2,6 +2,6 @@ import { IProject } from './iproject'; // Assuming IProject interface is defined
 
 export interface IImage {
   id: number;
-  project: number; // Assuming Project is defined as IProject interface
+  project: number; 
   image_url: string;
 }

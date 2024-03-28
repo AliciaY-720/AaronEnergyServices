@@ -3,4 +3,5 @@ export interface IProject {
     name: string;
     description: string;
     is_featured: boolean;
+    service: number;
 }
