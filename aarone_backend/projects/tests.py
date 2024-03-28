@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import Project, Image, Tag
+from .models import Project, Image, Tag, Service
 from django.urls import reverse
 
 PATH = "/api"
