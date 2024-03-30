@@ -13,8 +13,8 @@ export class ProjectDetailsComponent implements OnInit {
   }
 
   banner = {
-    image: "assets/images/banner/5.jpg",
-    title: "Helping you and your house become better acquainted.",
+    image: "assets/images/background/bg-map.jpg",
+    title: "Helping you and your project become better acquainted.",
     page: "Project Detail"
   }
 

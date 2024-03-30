@@ -27,10 +27,10 @@ export class Home4Component implements OnInit {
         image: "assets/images/gallery/portrait/pic7.jpg"
       }
     ],
-    experience: "25",
-    author: "David Houkr",
+    experience: "15",
+    author: "Aaron Qiu",
     sign: "assets/images/Signature+Black.png",
-    designation: "Architect & Founder"
+    designation: "Master Electrician & Founder"
   }
 
   specializations = [
@@ -54,8 +54,8 @@ export class Home4Component implements OnInit {
   ourValue = {
     video: "https://player.vimeo.com/video/34741214?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0",
     sign: "assets/images/Signature+Black.png",
-    author: "David Houkr",
-    designation: "Architect & Founder"
+    author: "Aaron Qiu",
+    designation: "Master Electrician & Founder"
   }
 
   projects = [
@@ -106,7 +106,7 @@ export class Home4Component implements OnInit {
   services = [
     {
       icon: "flaticon-city",
-      title: "Rooms & Halls",
+      title: "Hydraulic System",
       description: "Lorem Ipsum is simply dummy text of the printing and setting as Planning your ambitions."
     },
     {
@@ -191,7 +191,7 @@ export class Home4Component implements OnInit {
       month: "April",
       author: "John",
       comments: "0",
-      title: "Helping you and your house become better acquainted.",
+      title: "Helping you and your project become better acquainted.",
       description: "Same as saying through shrinking from toil and pain these cases perfectly simple."
     },
     {
