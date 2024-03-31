@@ -8,16 +8,6 @@ import { IImage } from '../../../../iimage';
   templateUrl: './projects1.component.html',
   styleUrls: ['./projects1.component.css']
 })
-// export class Projects1Component implements OnInit {
-
-//   // @Input() data: any;
-  
-//   constructor(private projectService: ProjectService) { }
-
-//   ngOnInit(): void {
-//   }
-
-// }
 
 
 export class Projects1Component implements OnInit {

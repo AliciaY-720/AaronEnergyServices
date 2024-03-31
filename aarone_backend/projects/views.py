@@ -22,16 +22,7 @@ class ImageDetailView(generics.RetrieveAPIView):
 
 class ProjectImagesView(generics.ListAPIView):
     serializer_class = ImageSerializer
-    # def get_queryset(self):
-    #     project_id = self.kwargs['project_id']
-    #     return Image.objects.filter(project_id=project_id)
     def get_queryset(self):
-        # project_id = self.request.query_params.get('project_id')
-        # print(project_id)
-        # if project_id is not None:
-        #     return Image.objects.filter(project__id=project_id)
-        # else:
-        #     return Image.objects.none()
         project_id = self.kwargs.get('pk')
         if project_id is not None:
             return Image.objects.filter(project__id=project_id)
