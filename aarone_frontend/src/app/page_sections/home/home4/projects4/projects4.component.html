@@ -32,7 +32,7 @@
                         <h4 class="mt-tilte">{{object.name}}</h4>
                         <p>{{object.description | truncate:10}}
                         </p>
-                        <a routerLink="/project-detail" class="read-more site-button btn-effect">Read More</a>
+                        <a [routerLink]="['/project-detail']" [queryParams]="{ id: object.id }" class="read-more site-button btn-effect">Read More</a>
                     </div>
                 </div>
             </div>              

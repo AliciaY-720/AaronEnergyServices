@@ -16,12 +16,12 @@ export class ProjectService {
   getAllProjects(): Observable<IProject[]> {
     return this.http.get<IProject[]>(`${this.baseUrl}projects/`);
   }
-  
-  getFeaturedProjects(): Observable<IProject[]> {
-    return this.http.get<IProject[]>(`${this.baseUrl}projects/?is_featured=true`);
-  }
 
   getProjectImage(projectId: number): Observable<IImage[]> {
     return this.http.get<IImage[]>(`${this.baseUrl}projects/${projectId}/images/`);
+  }
+
+  getProjectById(projectId:number): Observable<IProject> {
+    return this.http.get<IProject>(`${this.baseUrl}projects/${projectId}/`);
   }
 }

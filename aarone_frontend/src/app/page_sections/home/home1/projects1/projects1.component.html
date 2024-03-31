@@ -26,7 +26,7 @@
                             <div class="mt-info  p-t20 text-white">
                                 <h4 class="mt-tilte m-b10 m-t0">{{project.name}}</h4>
                             </div>
-                            <a routerLink="/project-detail"></a>                                    
+                            <a [routerLink]="['/project-detail']" [queryParams]="{ id: project.id }"></a>                                    
                         </div>
                     </div> 
 
