@@ -13,7 +13,7 @@ export class ProjectGridComponent implements OnInit {
   }
 
   banner = {
-    image: "assets/images/banner/2.jpg",
+    image: "assets/images/background/bg-site.png",
     title: "Always dedicated and devoted",
     page: "Project Grid"
   }
