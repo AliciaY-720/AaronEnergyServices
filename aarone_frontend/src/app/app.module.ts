@@ -117,6 +117,7 @@ import { LoaderDirective } from './directives/loader.directive';
 import { LoaderComponent } from './section_elements/loader/loader.component';
 import { SafePipe } from './pipes/safe.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { TruncatePipe } from './truncate.pipe';
 
 @NgModule({
   declarations: [
@@ -232,7 +233,8 @@ import { HttpClientModule } from '@angular/common/http';
     Projects7Component,
     LoaderDirective,
     LoaderComponent,
-    SafePipe
+    SafePipe,
+    TruncatePipe
   ],
   imports: [
     HttpClientModule,
