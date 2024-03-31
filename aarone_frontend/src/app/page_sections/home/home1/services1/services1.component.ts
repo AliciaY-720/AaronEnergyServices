@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-
+import { IService } from 'src/app/iservice';
+import { ServiceService } from 'src/app/service.service';
 @Component({
   selector: 'app-services1',
   templateUrl: './services1.component.html',
@@ -7,11 +8,19 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class Services1Component implements OnInit {
 
-  @Input() data: any;
-  
-  constructor() { }
+  services: IService[] = [];
+
+  constructor(private serviceService: ServiceService) { }
 
   ngOnInit(): void {
+    this.serviceService.getAllServices().subscribe(
+      (services: IService[]) => {
+        this.services = services; // Assign the fetched services to the component variable
+      },
+      (error) => {
+        console.error('Error fetching all services:', error);
+      }
+    );
   }
-
 }
+

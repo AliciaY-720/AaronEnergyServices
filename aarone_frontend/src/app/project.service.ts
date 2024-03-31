@@ -12,8 +12,11 @@ export class ProjectService {
   private baseUrl = 'http://localhost:8000/api/';
 
   constructor(private http: HttpClient) { }
-  // constructor() {}
 
+  getAllProjects(): Observable<IProject[]> {
+    return this.http.get<IProject[]>(`${this.baseUrl}projects/`);
+  }
+  
   getFeaturedProjects(): Observable<IProject[]> {
     return this.http.get<IProject[]>(`${this.baseUrl}projects/?is_featured=true`);
   }
