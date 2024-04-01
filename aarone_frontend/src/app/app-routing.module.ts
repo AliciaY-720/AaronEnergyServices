@@ -45,7 +45,6 @@ const routes: Routes = [
   { path: 'blog-list', component: BlogListComponent},
   { path: 'blog-masonary', component: BlogMasonaryComponent},
   { path: 'faq', component: FaqComponent},
-  { path: 'error404', component: Error404Component},
   { path: 'contact', component: ContactComponent},
   { path: 'post-image', component: PostImageComponent},
   { path: 'post-gallery', component: PostGalleryComponent},
@@ -65,7 +64,8 @@ const routes: Routes = [
   { path: 'tabs', component: TabsComponent},
   { path: 'tables', component: TablesComponent},
   { path: 'videos', component: VideosComponent},
-  { path: 'icon-font', component: IconFontComponent}
+  { path: 'icon-font', component: IconFontComponent},
+  { path: '**', component: Error404Component},
 ];
 
 @NgModule({
