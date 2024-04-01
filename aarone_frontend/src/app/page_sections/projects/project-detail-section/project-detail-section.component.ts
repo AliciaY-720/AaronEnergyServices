@@ -14,25 +14,13 @@ export class ProjectDetailSectionComponent implements OnInit {
   @Input() data: any;
   project: IProject | undefined
   image_urls: String[] = []
-  constructor(private route: ActivatedRoute, private projectService: ProjectService) {
-    // console.log(this.currentUrl);
-    // let index = this.currentUrl.lastIndexOf( "/" );
-    // console.log("lastIndexOf found /:" + index );
-    // if (this.currentUrl[index-1] == 's') {
-    //   this.nextUrl += '2'
-    // }
-    // console.log(this.nextUrl);
-
-
-
-}
+  constructor(private route: ActivatedRoute, private projectService: ProjectService) {}
 
 ngOnInit() {
   let id = 0
   this.route.queryParams.subscribe(params => {
     // Access the "id" parameter value
     id = params['id']; 
-    // You can then use this.projectId to fetch data related to this project
   });
   this.projectService.getProjectById(id).subscribe(
     project => {
