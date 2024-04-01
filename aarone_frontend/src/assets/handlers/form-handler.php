@@ -24,7 +24,7 @@ if ( isset( $_POST['action'] ) ):
 
 
 
-    $to_email = "7xthemehelp@gmail.com";    // To email address
+    $to_email = "aaronexcom@yahoo.ca";    // To email address
 
     $to_name = "your-name";
 

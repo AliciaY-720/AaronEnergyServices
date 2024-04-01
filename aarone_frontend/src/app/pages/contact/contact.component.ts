@@ -13,7 +13,7 @@ export class ContactComponent implements OnInit {
   }
 
   banner = {
-    image: "assets/images/banner/4.jpg",
+    image: "assets/images/background/bg-map.png",
     title: "Putting a plan to action, to assure your satisfaction!",
     page: "Contact Us"
   }

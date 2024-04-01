@@ -13,7 +13,7 @@ if ( isset( $_POST['action'] ) ):
 	$message = filter_var( $_POST['message'], FILTER_SANITIZE_STRING );
 	
 
-    $to_email = "7xthemehelp@gmail.com";    // To email address
+    $to_email = "aaronexcom@yahoo.ca";    // To email address
     $to_name = "your-name";
 
     $email_subject = 'You Have Received a Message From ' . $name . '.';
