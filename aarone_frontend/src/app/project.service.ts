@@ -12,13 +12,16 @@ export class ProjectService {
   private baseUrl = 'http://localhost:8000/api/';
 
   constructor(private http: HttpClient) { }
-  // constructor() {}
 
-  getFeaturedProjects(): Observable<IProject[]> {
-    return this.http.get<IProject[]>(`${this.baseUrl}projects/?is_featured=true`);
+  getAllProjects(): Observable<IProject[]> {
+    return this.http.get<IProject[]>(`${this.baseUrl}projects/`);
   }
 
   getProjectImage(projectId: number): Observable<IImage[]> {
     return this.http.get<IImage[]>(`${this.baseUrl}projects/${projectId}/images/`);
+  }
+
+  getProjectById(projectId:number): Observable<IProject> {
+    return this.http.get<IProject>(`${this.baseUrl}projects/${projectId}/`);
   }
 }

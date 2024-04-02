@@ -8,29 +8,20 @@ import { IImage } from '../../../../iimage';
   templateUrl: './projects1.component.html',
   styleUrls: ['./projects1.component.css']
 })
-// export class Projects1Component implements OnInit {
-
-//   // @Input() data: any;
-  
-//   constructor(private projectService: ProjectService) { }
-
-//   ngOnInit(): void {
-//   }
-
-// }
 
 
 export class Projects1Component implements OnInit {
-  
   featuredProjects: IProject[] = [];
   firstImages: { [projectId: number]: IImage } = {}; // Object to store first images for each project
 
   constructor(private projectService: ProjectService) { }
 
   ngOnInit(): void {
-    this.projectService.getFeaturedProjects().subscribe(
+    this.projectService.getAllProjects().subscribe(
       (projects: IProject[]) => {
-        this.featuredProjects = projects;
+        // Filter for featured projects
+        this.featuredProjects = projects.filter(project => project.is_featured);
+        
         this.featuredProjects.forEach(project => {
           this.projectService.getProjectImage(project.id).subscribe(
             (images: IImage[]) => {
@@ -45,7 +36,7 @@ export class Projects1Component implements OnInit {
         });
       },
       (error) => {
-        console.error('Error fetching featured projects:', error);
+        console.error('Error fetching all projects:', error);
       }
     );
   }
