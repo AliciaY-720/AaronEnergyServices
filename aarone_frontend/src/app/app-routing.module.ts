@@ -32,6 +32,7 @@ import { TabsComponent } from './pages/shortcodes/tabs/tabs.component';
 import { TablesComponent } from './pages/shortcodes/tables/tables.component';
 import { VideosComponent } from './pages/shortcodes/videos/videos.component';
 import { IconFontComponent } from './pages/shortcodes/icon/icon-font/icon-font.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 const routes: Routes = [
   { path: '', component: Home1Component},
@@ -65,6 +66,7 @@ const routes: Routes = [
   { path: 'tables', component: TablesComponent},
   { path: 'videos', component: VideosComponent},
   { path: 'icon-font', component: IconFontComponent},
+  { path: 'thank-you', component: ThankYouComponent},
   { path: '**', component: Error404Component},
 ];
 

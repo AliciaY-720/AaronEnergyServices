@@ -1,0 +1,37 @@
+<div class="page-wraper">  
+      	
+    <!-- HEADER START -->
+    <app-header1></app-header1>
+    <!-- HEADER END -->
+    
+    <!-- CONTENT START -->
+    <div class="page-content">
+    
+        <!-- INNER PAGE BANNER -->
+        <app-banner1 [data]="banner"></app-banner1>
+        <!-- INNER PAGE BANNER END -->
+         
+        <!-- SECTION CONTENTG START -->
+        <div class="section-full p-tb80">  
+            <div class="container">
+                <div class="section-content">
+                    <div class="page-notfound text-center">
+                        <span class="title">Thank You!</span>
+                        <p>We will get back to you soon!</p>
+                        <a routerLink="/index" title="Back to home" class="site-button btn-effect">Back to home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SECTION CONTENT END -->
+        
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER START -->
+    <app-footer1></app-footer1>
+    <!-- FOOTER END -->
+    
+</div>
+
+<app-loader></app-loader>
