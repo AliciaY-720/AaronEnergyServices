@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { GoogleMapsModule } from '@angular/google-maps';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Home1Component } from './pages/home/home1/home1.component';
@@ -240,6 +240,7 @@ import { TruncatePipe } from './truncate.pipe';
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     GoogleMapsModule
   ],
   providers: [],
