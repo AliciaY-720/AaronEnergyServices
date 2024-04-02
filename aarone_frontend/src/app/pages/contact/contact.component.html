@@ -37,18 +37,50 @@
                                                                     
                                     <div class="form-group">
                                         <input id="name" formControlName="name" name="username" type="text" required class="form-control" placeholder="Name">
+                                        <div *ngIf="contactUsForm.get('name')?.hasError('required') &&
+                                        contactUsForm.get('name')?.touched">
+                                          <p class="validation-words">Name is required.</p>
+                                        </div>
+                                        <div *ngIf="contactUsForm.get('name')?.hasError('maxlength') &&
+                                        contactUsForm.get('name')?.touched">
+                                          <p class="validation-words">Maximum length is 100 characters.</p>
+                                        </div>
                                     </div>
                                
                                     <div class="form-group">
                                         <input  id="email" formControlName="email" name="email" type="text" class="form-control" required placeholder="Email">
+                                        <div *ngIf="contactUsForm.get('email')?.hasError('required') &&
+                                        contactUsForm.get('email')?.touched">
+                                        <p class="validation-words">Email is required.</p>
+                                        </div>
+                                        <div *ngIf="contactUsForm.get('email')?.hasError('minlength') &&
+                                        contactUsForm.get('email')?.touched">
+                                          <p class="validation-words">Minimum length is 6 characters.</p>
+                                        </div>
+                                        <div *ngIf="contactUsForm.get('email')?.hasError('maxlength') &&
+                                        contactUsForm.get('email')?.touched">
+                                          <p class="validation-words">Maximum length is 50 characters.</p>
+                                        </div>
+                                        <div *ngIf="contactUsForm.get('email')?.hasError('pattern') &&
+                                        contactUsForm.get('email')?.touched">
+                                          <p class="validation-words">Please enter a valid email address.</p>
+                                        </div>
                                     </div>
                                
                                     <div class="form-group">
                                         <textarea id="query" formControlName="query" name="message" rows="4" class="form-control " required placeholder="Message"></textarea>
+                                        <div *ngIf="contactUsForm.get('query')?.hasError('required') &&
+                                        contactUsForm.get('query')?.touched">
+                                        <p class="validation-words">Message is required.</p>
+                                        </div>
+                                        <div *ngIf="contactUsForm.get('query')?.hasError('maxlength') &&
+                                        contactUsForm.get('query')?.touched">
+                                          <p class="validation-words">Maximum length is 500 characters.</p>
+                                        </div>
                                     </div>
                                 
                                     <div class="text-right">
-                                        <button [disabled]="contactUsForm.invalid" name="submit" type="submit" value="Submit" class="site-button btn-effect">submit         
+                                        <button name="submit" type="submit" value="Submit" [disabled]="contactUsForm.invalid" class="site-button btn-effect">submit         
                                         </button>
                                     </div>
 
