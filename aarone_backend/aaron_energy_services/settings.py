@@ -131,3 +131,12 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:4200',
 ]
+
+# Configure Django email settings
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'  # SMTP server host (e.g., 'smtp.gmail.com')
+EMAIL_PORT = 587  # SMTP server port (e.g., 587 for TLS)
+EMAIL_USE_TLS = True  # Whether to use TLS (True/False)
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')  # SMTP server username
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')  # SMTP server password
+DEFAULT_FROM_EMAIL = 'Aaron Energy Services'  # Default sender email address
