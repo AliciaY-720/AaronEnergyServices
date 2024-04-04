@@ -26,11 +26,5 @@ class Image(models.Model):
         return f"Image for {self.project.name}"
 
 
-class Tag(models.Model):
-    name = models.CharField(max_length=50)
-    projects = models.ManyToManyField(Project)
-
-    def __str__(self):
-        return self.name
 
 

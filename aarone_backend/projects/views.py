@@ -1,6 +1,6 @@
 from rest_framework import generics
-from .models import Project, Image, Tag, Service
-from .serializers import ProjectSerializer, ImageSerializer, TagSerializer, ServiceSerializer
+from .models import Project, Image, Service
+from .serializers import ProjectSerializer, ImageSerializer, ServiceSerializer
 
 
 class ProjectListView(generics.ListAPIView):
@@ -38,13 +38,6 @@ class ServiceProjectsView(generics.ListAPIView):
         else:
             return Project.objects.none()
 
-class TagListView(generics.ListAPIView):
-    queryset = Tag.objects.all()
-    serializer_class = TagSerializer
-
-class TagDetailView(generics.RetrieveAPIView):
-    queryset = Tag.objects.all()
-    serializer_class = TagSerializer
 
 class ServiceListView(generics.ListAPIView):
     queryset = Service.objects.all()
