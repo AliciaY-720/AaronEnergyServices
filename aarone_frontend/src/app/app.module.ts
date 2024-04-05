@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { GoogleMapsModule } from '@angular/google-maps';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Home1Component } from './pages/home/home1/home1.component';
@@ -118,6 +118,7 @@ import { LoaderComponent } from './section_elements/loader/loader.component';
 import { SafePipe } from './pipes/safe.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { TruncatePipe } from './truncate.pipe';
+import { ThankYouComponent } from './thank-you/thank-you.component';
 
 @NgModule({
   declarations: [
@@ -234,12 +235,14 @@ import { TruncatePipe } from './truncate.pipe';
     LoaderDirective,
     LoaderComponent,
     SafePipe,
-    TruncatePipe
+    TruncatePipe,
+    ThankYouComponent
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     GoogleMapsModule
   ],
   providers: [],

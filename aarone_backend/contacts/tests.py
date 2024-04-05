@@ -12,14 +12,12 @@ class ContactModelTestCase(TestCase):
         self.contact = Contact.objects.create(
             name='John Doe',
             email='john@example.com',
-            phone='1234567890',
             query='Test query'
         )
 
     def test_contact_creation(self):
         self.assertEqual(self.contact.name, 'John Doe')
         self.assertEqual(self.contact.email, 'john@example.com')
-        self.assertEqual(self.contact.phone, '1234567890')
         self.assertEqual(self.contact.query, 'Test query')
 
 
@@ -33,7 +31,6 @@ class ContactAPITestCase(TestCase):
         self.contact_data = {
             'name': 'Jane Smith',
             'email': 'jane@example.com',
-            'phone': '0987654321',
             'query': 'Another test query'
         }
         self.contact = Contact.objects.create(**self.contact_data)
@@ -52,7 +49,6 @@ class ContactAPITestCase(TestCase):
         updated_data = {
             'name': 'Updated Name',
             'email': 'updated@example.com',
-            'phone': '1111111111',
             'query': 'Updated query'
         }
         response = self.client.put(reverse('contacts-retrieve-update-delete', kwargs={'pk': self.contact.pk}),
@@ -61,7 +57,6 @@ class ContactAPITestCase(TestCase):
         self.contact.refresh_from_db()
         self.assertEqual(self.contact.name, updated_data['name'])
         self.assertEqual(self.contact.email, updated_data['email'])
-        self.assertEqual(self.contact.phone, updated_data['phone'])
         self.assertEqual(self.contact.query, updated_data['query'])
 
     def test_delete_contact(self):

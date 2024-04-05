@@ -1,0 +1,10 @@
+.validation-words {
+    color: crimson;
+}
+
+button[disabled] {
+    background-color: #CCCCCC; /* Grey color */
+    /* Optionally, you can add more styling to make it visually distinct when disabled */
+    opacity: 0.5; /* Reduce opacity */
+    cursor: not-allowed; /* Change cursor to indicate it's not clickable */
+}
