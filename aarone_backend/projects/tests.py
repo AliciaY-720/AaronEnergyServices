@@ -1,6 +1,5 @@
 from django.test import TestCase, RequestFactory
-from .models import Project, Image, Tag, Service
-from django.urls import reverse
+from .models import Project, Image, Service
 from .views import ServiceDetailView, ServiceListView
 
 PATH = "/api"
@@ -23,13 +22,6 @@ class ImageModelTestCase(TestCase):
         self.assertEqual(self.image.project, self.project)
         self.assertEqual(self.image.image_url, "https://example.com/image.jpg")
 
-
-class TagModelTestCase(TestCase):
-    def setUp(self):
-        self.tag = Tag.objects.create(name="Test Tag")
-
-    def test_tag_creation(self):
-        self.assertEqual(self.tag.name, "Test Tag")
 
 
 class ProjectViewsTestCase(TestCase):
@@ -57,16 +49,6 @@ class ImageViewsTestCase(TestCase):
         response = self.client.get(PATH + f'/images/{image.pk}/')
         self.assertEqual(response.status_code, 200)
 
-
-class TagViewsTestCase(TestCase):
-    def test_tag_list_view(self):
-        response = self.client.get(PATH + '/tags/')
-        self.assertEqual(response.status_code, 200)
-
-    def test_tag_detail_view(self):
-        tag = Tag.objects.create(name="Test Tag")
-        response = self.client.get(PATH + f'/tags/{tag.pk}/')
-        self.assertEqual(response.status_code, 200)
 
 class ServiceListViewTest(TestCase):
     @classmethod

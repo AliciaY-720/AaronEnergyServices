@@ -12,7 +12,7 @@ export class ThankYouComponent implements OnInit {
   ngOnInit(): void {
   }
   banner = {
-    image: "assets/images/background/bg-site.jpg",
+    image: "assets/images/background/bg-site.png",
     title: "Thank you",
     page: "Thank you Page"
   }

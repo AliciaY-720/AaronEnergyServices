@@ -13,7 +13,7 @@ export class Error404Component implements OnInit {
   }
 
   banner = {
-    image: "assets/images/background/bg-site.jpg",
+    image: "assets/images/background/bg-site.png",
     title: "Page Not Found",
     page: "Error Page"
   }
