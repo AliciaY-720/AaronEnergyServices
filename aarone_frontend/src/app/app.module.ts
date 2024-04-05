@@ -54,7 +54,6 @@ import { Banner1Component } from './page_sections/banner/banner1/banner1.compone
 import { Specializations4Component } from './page_sections/about/specializations4/specializations4.component';
 import { Team3Component } from './page_sections/about/team3/team3.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { ServicesComponent } from './pages/services/services.component';
 import { About5Component } from './page_sections/services/about5/about5.component';
 import { BlogGrid1Component } from './page_sections/blog/blog-grid1/blog-grid1.component';
 import { BlogList1Component } from './page_sections/blog/blog-list1/blog-list1.component';
@@ -156,7 +155,6 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
     Specializations4Component,
     Team3Component,
     ContactComponent,
-    ServicesComponent,
     About5Component,
     BlogGrid1Component,
     BlogList1Component,

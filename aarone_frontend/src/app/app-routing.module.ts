@@ -6,7 +6,6 @@ import { Home2Component } from './pages/home/home2/home2.component';
 import { Home3Component } from './pages/home/home3/home3.component';
 import { Home4Component } from './pages/home/home4/home4.component';
 import { AboutUs1Component } from './pages/about/about-us1/about-us1.component';
-import { ServicesComponent } from './pages/services/services.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProjectGridComponent } from './pages/projects/project-grid/project-grid.component';
@@ -24,7 +23,6 @@ const routes: Routes = [
   { path: 'index3', component: Home3Component},
   { path: 'index4', component: Home4Component},
   { path: 'about', component: AboutUs1Component},
-  { path: 'services', component: ServicesComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'project-grid', component: ProjectGridComponent},
   { path: 'project-masonary', component: ProjectMasonaryComponent},
