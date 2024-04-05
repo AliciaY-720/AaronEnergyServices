@@ -7,7 +7,6 @@ import { Home3Component } from './pages/home/home3/home3.component';
 import { Home4Component } from './pages/home/home4/home4.component';
 import { AboutUs1Component } from './pages/about/about-us1/about-us1.component';
 import { ServicesComponent } from './pages/services/services.component';
-import { FaqComponent } from './pages/faq/faq.component';
 import { Error404Component } from './pages/error404/error404.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PostImageComponent } from './pages/post/post-image/post-image.component';
@@ -30,7 +29,6 @@ const routes: Routes = [
   { path: 'index4', component: Home4Component},
   { path: 'about', component: AboutUs1Component},
   { path: 'services', component: ServicesComponent},
-  { path: 'faq', component: FaqComponent},
   { path: 'contact', component: ContactComponent},
   { path: 'post-image', component: PostImageComponent},
   { path: 'post-gallery', component: PostGalleryComponent},
