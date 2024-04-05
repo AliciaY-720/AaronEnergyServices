@@ -141,7 +141,7 @@ EMAIL_PORT = 587  # SMTP server port (e.g., 587 for TLS)
 EMAIL_USE_TLS = True  # Whether to use TLS (True/False)
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')  # SMTP server username
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')  # SMTP server password
-DEFAULT_FROM_EMAIL = 'Aaron Energy Services'  # Default sender email address
+DEFAULT_FROM_EMAIL = 'Aaron Energy Services'  # Default sender name
 
 
 import logging
