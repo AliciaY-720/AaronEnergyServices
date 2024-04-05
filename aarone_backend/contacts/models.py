@@ -12,4 +12,4 @@ class Contact(models.Model):
 def send_email_on_contact_save(sender, instance, created, **kwargs):
     if created:  # Only trigger the task if a new Contact instance was created
         send_email_task.delay(instance.name.strip(), instance.email, instance.query)
-        send_email_about_new_query_to_aaron_task(instance.name.strip(), instance.email, instance.query)
+        # send_email_about_new_query_to_aaron_task.delay(instance.name.strip(), instance.email, instance.query)
