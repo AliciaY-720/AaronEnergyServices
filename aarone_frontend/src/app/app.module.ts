@@ -57,9 +57,6 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FaqComponent } from './pages/faq/faq.component';
 import { ServicesComponent } from './pages/services/services.component';
 import { About5Component } from './page_sections/services/about5/about5.component';
-import { BlogGridComponent } from './pages/blog/blog-grid/blog-grid.component';
-import { BlogListComponent } from './pages/blog/blog-list/blog-list.component';
-import { BlogMasonaryComponent } from './pages/blog/blog-masonary/blog-masonary.component';
 import { BlogGrid1Component } from './page_sections/blog/blog-grid1/blog-grid1.component';
 import { BlogList1Component } from './page_sections/blog/blog-list1/blog-list1.component';
 import { BlogSidebar1Component } from './page_sections/blog/blog-sidebar1/blog-sidebar1.component';
@@ -176,9 +173,6 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
     FaqComponent,
     ServicesComponent,
     About5Component,
-    BlogGridComponent,
-    BlogListComponent,
-    BlogMasonaryComponent,
     BlogGrid1Component,
     BlogList1Component,
     BlogSidebar1Component,
