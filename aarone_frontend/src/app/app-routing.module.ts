@@ -20,15 +20,6 @@ import { ProjectCarousalComponent } from './pages/projects/project-carousal/proj
 import { ProjectClassicComponent } from './pages/projects/project-classic/project-classic.component';
 import { ProjectClassic2Component } from './pages/projects/project-classic2/project-classic2.component';
 import { ProjectDetailsComponent } from './pages/projects/project-details/project-details.component';
-import { AccordianComponent } from './pages/shortcodes/accordian/accordian.component';
-import { ButtonsComponent } from './pages/shortcodes/buttons/buttons.component';
-import { IconBoxComponent } from './pages/shortcodes/icon/icon-box/icon-box.component';
-import { ListGroupComponent } from './pages/shortcodes/list-group/list-group.component';
-import { ModalPopupComponent } from './pages/shortcodes/modal-popup/modal-popup.component';
-import { TabsComponent } from './pages/shortcodes/tabs/tabs.component';
-import { TablesComponent } from './pages/shortcodes/tables/tables.component';
-import { VideosComponent } from './pages/shortcodes/videos/videos.component';
-import { IconFontComponent } from './pages/shortcodes/icon/icon-font/icon-font.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 
 const routes: Routes = [
@@ -51,15 +42,6 @@ const routes: Routes = [
   { path: 'project-classic1', component: ProjectClassicComponent},
   { path: 'project-classic2', component: ProjectClassic2Component},
   { path: 'project-detail', component: ProjectDetailsComponent},
-  { path: 'accordian', component: AccordianComponent},
-  { path: 'buttons', component: ButtonsComponent},
-  { path: 'icon-box', component: IconBoxComponent},
-  { path: 'list-group', component: ListGroupComponent},
-  { path: 'modal-popup', component: ModalPopupComponent},
-  { path: 'tabs', component: TabsComponent},
-  { path: 'tables', component: TablesComponent},
-  { path: 'videos', component: VideosComponent},
-  { path: 'icon-font', component: IconFontComponent},
   { path: 'thank-you', component: ThankYouComponent},
   { path: '**', component: Error404Component},
 ];

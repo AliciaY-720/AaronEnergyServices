@@ -77,16 +77,7 @@ import { PostContentComponent } from './page_sections/post/post-content/post-con
 import { PostImageComponent } from './pages/post/post-image/post-image.component';
 import { PostVideoComponent } from './pages/post/post-video/post-video.component';
 import { PostWithSidebarComponent } from './pages/post/post-with-sidebar/post-with-sidebar.component';
-import { AccordianComponent } from './pages/shortcodes/accordian/accordian.component';
-import { ButtonsComponent } from './pages/shortcodes/buttons/buttons.component';
-import { ListGroupComponent } from './pages/shortcodes/list-group/list-group.component';
-import { ModalPopupComponent } from './pages/shortcodes/modal-popup/modal-popup.component';
-import { TablesComponent } from './pages/shortcodes/tables/tables.component';
-import { TabsComponent } from './pages/shortcodes/tabs/tabs.component';
-import { VideosComponent } from './pages/shortcodes/videos/videos.component';
 import { LeftSidebar1Component } from './page_sections/shortcodes/left-sidebar1/left-sidebar1.component';
-import { IconBoxComponent } from './pages/shortcodes/icon/icon-box/icon-box.component';
-import { IconFontComponent } from './pages/shortcodes/icon/icon-font/icon-font.component';
 import { GridBox1Component } from './section_elements/boxes/grid-box1/grid-box1.component';
 import { ServiceBox1Component } from './section_elements/boxes/service-box1/service-box1.component';
 import { GridBox2Component } from './section_elements/boxes/grid-box2/grid-box2.component';
@@ -193,16 +184,7 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
     PostImageComponent,
     PostVideoComponent,
     PostWithSidebarComponent,
-    AccordianComponent,
-    ButtonsComponent,
-    ListGroupComponent,
-    ModalPopupComponent,
-    TablesComponent,
-    TabsComponent,
-    VideosComponent,
     LeftSidebar1Component,
-    IconBoxComponent,
-    IconFontComponent,
     GridBox1Component,
     ServiceBox1Component,
     GridBox2Component,
