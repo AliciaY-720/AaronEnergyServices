@@ -27,14 +27,5 @@ def send_email_task(instance_name, instance_email, instance_query):
     msg_2.content_subtype = "html"  # Ensure content is treated as HTML
     msg_2.send()
 
-@shared_task
-def send_email_about_new_query_to_aaron_task(instance_name, instance_email, instance_query):
-    # Send email to aaron
-    from_email = settings.DEFAULT_FROM_EMAIL
-    subject_2 = 'New Contact Created'
-    html_content_2 = render_to_string('welcome.html', {'name': instance_name, 'email': instance_email, 'query': instance_query})
-    msg_2 = EmailMessage(subject_2, html_content_2, from_email, [settings.EMAIL_HOST_USER])
-    msg_2.content_subtype = "html"  # Ensure content is treated as HTML
-    msg_2.send()
 
 
