@@ -71,11 +71,7 @@ import { ProjectGridComponent } from './pages/projects/project-grid/project-grid
 import { ProjectMasonaryComponent } from './pages/projects/project-masonary/project-masonary.component';
 import { ProjectDetailSectionComponent } from './page_sections/projects/project-detail-section/project-detail-section.component';
 import { SimilarProjects1Component } from './page_sections/projects/similar-projects1/similar-projects1.component';
-import { PostGalleryComponent } from './pages/post/post-gallery/post-gallery.component';
 import { PostContentComponent } from './page_sections/post/post-content/post-content.component';
-import { PostImageComponent } from './pages/post/post-image/post-image.component';
-import { PostVideoComponent } from './pages/post/post-video/post-video.component';
-import { PostWithSidebarComponent } from './pages/post/post-with-sidebar/post-with-sidebar.component';
 import { LeftSidebar1Component } from './page_sections/shortcodes/left-sidebar1/left-sidebar1.component';
 import { GridBox1Component } from './section_elements/boxes/grid-box1/grid-box1.component';
 import { ServiceBox1Component } from './section_elements/boxes/service-box1/service-box1.component';
@@ -177,11 +173,7 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
     ProjectMasonaryComponent,
     ProjectDetailSectionComponent,
     SimilarProjects1Component,
-    PostGalleryComponent,
     PostContentComponent,
-    PostImageComponent,
-    PostVideoComponent,
-    PostWithSidebarComponent,
     LeftSidebar1Component,
     GridBox1Component,
     ServiceBox1Component,
