@@ -54,12 +54,7 @@ import { Banner1Component } from './page_sections/banner/banner1/banner1.compone
 import { Specializations4Component } from './page_sections/about/specializations4/specializations4.component';
 import { Team3Component } from './page_sections/about/team3/team3.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { FaqComponent } from './pages/faq/faq.component';
-import { ServicesComponent } from './pages/services/services.component';
 import { About5Component } from './page_sections/services/about5/about5.component';
-import { BlogGridComponent } from './pages/blog/blog-grid/blog-grid.component';
-import { BlogListComponent } from './pages/blog/blog-list/blog-list.component';
-import { BlogMasonaryComponent } from './pages/blog/blog-masonary/blog-masonary.component';
 import { BlogGrid1Component } from './page_sections/blog/blog-grid1/blog-grid1.component';
 import { BlogList1Component } from './page_sections/blog/blog-list1/blog-list1.component';
 import { BlogSidebar1Component } from './page_sections/blog/blog-sidebar1/blog-sidebar1.component';
@@ -75,21 +70,8 @@ import { ProjectGridComponent } from './pages/projects/project-grid/project-grid
 import { ProjectMasonaryComponent } from './pages/projects/project-masonary/project-masonary.component';
 import { ProjectDetailSectionComponent } from './page_sections/projects/project-detail-section/project-detail-section.component';
 import { SimilarProjects1Component } from './page_sections/projects/similar-projects1/similar-projects1.component';
-import { PostGalleryComponent } from './pages/post/post-gallery/post-gallery.component';
 import { PostContentComponent } from './page_sections/post/post-content/post-content.component';
-import { PostImageComponent } from './pages/post/post-image/post-image.component';
-import { PostVideoComponent } from './pages/post/post-video/post-video.component';
-import { PostWithSidebarComponent } from './pages/post/post-with-sidebar/post-with-sidebar.component';
-import { AccordianComponent } from './pages/shortcodes/accordian/accordian.component';
-import { ButtonsComponent } from './pages/shortcodes/buttons/buttons.component';
-import { ListGroupComponent } from './pages/shortcodes/list-group/list-group.component';
-import { ModalPopupComponent } from './pages/shortcodes/modal-popup/modal-popup.component';
-import { TablesComponent } from './pages/shortcodes/tables/tables.component';
-import { TabsComponent } from './pages/shortcodes/tabs/tabs.component';
-import { VideosComponent } from './pages/shortcodes/videos/videos.component';
 import { LeftSidebar1Component } from './page_sections/shortcodes/left-sidebar1/left-sidebar1.component';
-import { IconBoxComponent } from './pages/shortcodes/icon/icon-box/icon-box.component';
-import { IconFontComponent } from './pages/shortcodes/icon/icon-font/icon-font.component';
 import { GridBox1Component } from './section_elements/boxes/grid-box1/grid-box1.component';
 import { ServiceBox1Component } from './section_elements/boxes/service-box1/service-box1.component';
 import { GridBox2Component } from './section_elements/boxes/grid-box2/grid-box2.component';
@@ -173,12 +155,7 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
     Specializations4Component,
     Team3Component,
     ContactComponent,
-    FaqComponent,
-    ServicesComponent,
     About5Component,
-    BlogGridComponent,
-    BlogListComponent,
-    BlogMasonaryComponent,
     BlogGrid1Component,
     BlogList1Component,
     BlogSidebar1Component,
@@ -194,21 +171,8 @@ import { ThankYouComponent } from './thank-you/thank-you.component';
     ProjectMasonaryComponent,
     ProjectDetailSectionComponent,
     SimilarProjects1Component,
-    PostGalleryComponent,
     PostContentComponent,
-    PostImageComponent,
-    PostVideoComponent,
-    PostWithSidebarComponent,
-    AccordianComponent,
-    ButtonsComponent,
-    ListGroupComponent,
-    ModalPopupComponent,
-    TablesComponent,
-    TabsComponent,
-    VideosComponent,
     LeftSidebar1Component,
-    IconBoxComponent,
-    IconFontComponent,
     GridBox1Component,
     ServiceBox1Component,
     GridBox2Component,
