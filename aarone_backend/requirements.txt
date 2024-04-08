@@ -28,6 +28,7 @@ kombu==5.3.6
 pillow==10.2.0
 platformdirs==4.2.0
 prompt-toolkit==3.0.43
+psycopg2==2.9.9
 pycparser==2.22
 python-crontab==3.0.0
 python-dateutil==2.9.0.post0
@@ -41,3 +42,4 @@ urllib3==2.2.1
 vine==5.1.0
 virtualenv==20.25.1
 wcwidth==0.2.13
+whitenoise==6.6.0
