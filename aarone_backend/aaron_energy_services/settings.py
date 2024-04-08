@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 import os
 from pathlib import Path
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,15 +23,15 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Load environment variables from .env file
-load_dotenv()
+# load_dotenv()
 
 # Use environment variables
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
-ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -51,16 +51,16 @@ INSTALLED_APPS = [
     "contacts.apps.ContactsConfig",
 ]
 
-MIDDLEWARE = [
-    "django.middleware.security.SecurityMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
-    "django.contrib.sessions.middleware.SessionMiddleware",
-    "django.middleware.common.CommonMiddleware",
-    "django.middleware.csrf.CsrfViewMiddleware",
-    "django.contrib.auth.middleware.AuthenticationMiddleware",
-    "django.contrib.messages.middleware.MessageMiddleware",
-    "django.middleware.clickjacking.XFrameOptionsMiddleware",
-]
+# MIDDLEWARE = [
+#     "django.middleware.security.SecurityMiddleware",
+#     "corsheaders.middleware.CorsMiddleware",
+#     "django.contrib.sessions.middleware.SessionMiddleware",
+#     "django.middleware.common.CommonMiddleware",
+#     "django.middleware.csrf.CsrfViewMiddleware",
+#     "django.contrib.auth.middleware.AuthenticationMiddleware",
+#     "django.contrib.messages.middleware.MessageMiddleware",
+#     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+# ]
 
 ROOT_URLCONF = "aaron_energy_services.urls"
 
@@ -86,12 +86,12 @@ WSGI_APPLICATION = "aaron_energy_services.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
+#     }
+# }
 
 
 # Password validation
@@ -148,35 +148,103 @@ import logging
 import sys
 
 # Define logging configuration
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'console': {
+#             'class': 'logging.StreamHandler',
+#             'formatter': 'simple',
+#             'stream': sys.stdout,  # Specify stdout for console output
+#         },
+#     },
+#     'formatters': {
+#         'simple': {
+#             'format': '%(levelname)s %(message)s'
+#         },
+#     },
+#     'loggers': {
+#         '': {
+#             'handlers': ['console'],
+#             'level': 'INFO',
+#         },
+#         'django': {
+#             'handlers': ['console'],
+#             'level': 'INFO',
+#             'propagate': False,
+#         },
+#         'aaron_energy_services': {
+#             'handlers': ['console'],
+#             'level': 'DEBUG',
+#             'propagate': False,
+#         },
+#     },
+# }
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+default_website_hostname = 'aaronenergyservicesbackend.azurewebsites.net' # Provide your default hostname here
+website_hostname = os.environ.get('WEBSITE_HOSTNAME', default_website_hostname)
+ALLOWED_HOSTS = [website_hostname]
+CSRF_TRUSTED_ORIGINS = ['https://' + website_hostname]
+DEBUG = False
+
+MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhitenoiseMiddleware",
+    "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.common.CommonMiddleware",
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+]
+
+# CORS_ORIGIN_WHITELIST = [
+#     'http://localhost:4200',
+# ]
+
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
+
+CONNECTION = os.environ.get('AZURE_POSTGRESQL_CONNECTIONSTRING')
+CONNECTION_STR = {pair.split('=')[0]:pair.split('=')[1] for pair in CONNECTION.split(' ')}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': CONNECTION_STR['dbname'],
+        'HOST': CONNECTION_STR['host'],
+        'USER': CONNECTION_STR['user'],
+        'PASSWORD': CONNECTION_STR['password'],
+
+    }
+}
+
+
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
         'console': {
+            'level': 'ERROR',  # Change this to the appropriate level for production
             'class': 'logging.StreamHandler',
-            'formatter': 'simple',
-            'stream': sys.stdout,  # Specify stdout for console output
         },
-    },
-    'formatters': {
-        'simple': {
-            'format': '%(levelname)s %(message)s'
-        },
+        # You can add more handlers if needed, such as file handlers or email handlers
     },
     'loggers': {
-        '': {
-            'handlers': ['console'],
-            'level': 'INFO',
-        },
         'django': {
             'handlers': ['console'],
-            'level': 'INFO',
-            'propagate': False,
-        },
-        'aaron_energy_services': {
-            'handlers': ['console'],
-            'level': 'DEBUG',
-            'propagate': False,
+            'level': 'ERROR',  # Change this to the appropriate level for production
+            'propagate': True,
         },
     },
 }
