@@ -183,9 +183,8 @@ import sys
 # }
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-default_website_hostname = 'aaronenergyservicesbackend.azurewebsites.net' # Provide your default hostname here
-website_hostname = os.environ.get('WEBSITE_HOSTNAME', default_website_hostname)
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # Provide your default hostname here
+website_hostname = os.environ.get('WEBSITE_HOSTNAME')
 ALLOWED_HOSTS = [website_hostname]
 CSRF_TRUSTED_ORIGINS = ['https://' + website_hostname]
 DEBUG = False
@@ -193,7 +192,7 @@ DEBUG = False
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
-    "whitenoise.middleware.WhitenoiseMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
