@@ -1,7 +1,7 @@
 from .settings import *
 from .settings import BASE_DIR
 import os
-
+from dotenv import load_dotenv
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 default_website_hostname = 'aaronenergyservicesbackend.azurewebsites.net' # Provide your default hostname here
