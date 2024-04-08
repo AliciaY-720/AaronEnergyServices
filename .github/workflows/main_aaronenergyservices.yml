@@ -87,8 +87,3 @@ jobs:
         with:
           app-name: 'AaronEnergyServices'
           slot-name: 'Production'
-
-#      - name: Run Celery
-#        run: |
-#          source venv/bin/activate
-#          gunicorn — bind=0.0.0.0 — timeout 600 config.wsgi & celery -A config worker -l INFO -B
