@@ -1,5 +1,6 @@
 from .settings import *
 from .settings import BASE_DIR
+import os
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
