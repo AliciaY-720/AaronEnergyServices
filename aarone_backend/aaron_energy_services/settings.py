@@ -186,7 +186,7 @@ import sys
 website_hostname = os.environ['WEBSITE_HOSTNAME']
 ALLOWED_HOSTS = [website_hostname]
 CSRF_TRUSTED_ORIGINS = ['https://' + website_hostname]
-DEBUG = False
+DEBUG = os.environ['DEBUG']
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
