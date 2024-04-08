@@ -87,4 +87,10 @@ jobs:
         with:
           app-name: 'AaronEnergyServices'
           slot-name: 'Production'
+                   
+      - name: Run Celery
+        run: |
+          cd aarone_backend
+          source venv/bin/activate
+          celery -A config worker -l INFO -B
           
