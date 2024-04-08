@@ -129,9 +129,9 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:4200',
-]
+# CORS_ORIGIN_WHITELIST = [
+#     'http://localhost:4200',
+# ]
 
 CELERY_BROKER_URL = os.environ.get('CELERY_BROKER_URL')
 
@@ -217,10 +217,9 @@ STORAGES = {
 
 CONNECTION = os.environ.get('AZURE_POSTGRESQL_CONNECTIONSTRING')
 CONNECTION_STR = {pair.split('=')[0]:pair.split('=')[1] for pair in CONNECTION.split(' ')}
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': CONNECTION_STR['dbname'],
         'HOST': CONNECTION_STR['host'],
         'USER': CONNECTION_STR['user'],
