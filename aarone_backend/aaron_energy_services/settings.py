@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # load_dotenv()
 
 # Use environment variables
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
@@ -37,7 +37,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # Application definition
 
 INSTALLED_APPS = [
-    "whitenoise.runserver_nostatic",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -133,7 +132,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 #     'http://localhost:4200',
 # ]
 
-CELERY_BROKER_URL = os.environ.get('CELERY_BROKER_URL')
+CELERY_BROKER_URL = os.environ['CELERY_BROKER_URL']
 
 # Configure Django email settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -183,8 +182,8 @@ import sys
 # }
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # Provide your default hostname here
-website_hostname = os.environ.get('WEBSITE_HOSTNAME')
+ # Provide your default hostname here
+website_hostname = os.environ['WEBSITE_HOSTNAME']
 ALLOWED_HOSTS = [website_hostname]
 CSRF_TRUSTED_ORIGINS = ['https://' + website_hostname]
 DEBUG = False
@@ -210,11 +209,12 @@ STORAGES = {
         "BACKEND": "django.core.files.storage.FileSystemStorage",
     },
     "staticfiles": {
-        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+        "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
     },
 }
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-CONNECTION = os.environ.get('AZURE_POSTGRESQL_CONNECTIONSTRING')
+CONNECTION = os.environ['AZURE_POSTGRESQL_CONNECTIONSTRING']
 CONNECTION_STR = {pair.split('=')[0]:pair.split('=')[1] for pair in CONNECTION.split(' ')}
 DATABASES = {
     'default': {
