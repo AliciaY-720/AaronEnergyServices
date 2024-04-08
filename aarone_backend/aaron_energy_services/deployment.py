@@ -1,6 +1,8 @@
 from .settings import *
-# from .settings import BASE_DIR
+from .settings import BASE_DIR
 
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
 CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']]
 DEBUG = False
@@ -44,8 +46,7 @@ DATABASES = {
     }
 }
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 LOGGING = {
     'version': 1,
