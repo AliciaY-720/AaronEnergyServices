@@ -3,7 +3,7 @@ from .settings import BASE_DIR
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-default_website_hostname = os.environ.get('HOSTNAME')  # Provide your default hostname here
+default_website_hostname = 'aaronenergyservicesbackend.azurewebsites.net' # Provide your default hostname here
 website_hostname = os.environ.get('WEBSITE_HOSTNAME', default_website_hostname)
 ALLOWED_HOSTS = [website_hostname]
 CSRF_TRUSTED_ORIGINS = ['https://' + website_hostname]
