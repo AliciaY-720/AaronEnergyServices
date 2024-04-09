@@ -24,7 +24,7 @@ export class AboutUs1Component implements OnInit {
         image: "https://github.com/AliciaY-720/aaronenergy.github.io/blob/main/images/webwxgetmsgimg6.jpg?raw=true"
       },
       {
-        image: "https://github.com/AliciaY-720/aaronenergy.github.io/blob/main/images/IMG_4008%20.jpg?raw=true"
+        image: "https://github.com/AliciaY-720/aaronenergy.github.io/blob/main/images/IMG_4008.jpg?raw=true"
       },
       {
         image: "https://github.com/AliciaY-720/aaronenergy.github.io/blob/main/images/IMG_0914.JPG?raw=true"

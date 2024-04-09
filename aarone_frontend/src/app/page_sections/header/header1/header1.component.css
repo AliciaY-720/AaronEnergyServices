@@ -1,6 +1,7 @@
 @media only screen and (max-width: 768px) {
     .logo-header img {
         width: 300px; /* Adjust the width as needed */
-        height: auto; /* Maintain aspect ratio */
+        height: 100px; /* Maintain aspect ratio */
+        overflow: visible; 
     }
 }
