@@ -1,1 +1,1 @@
-celery -A aaron_energy_services worker --loglevel=info
+python manage.py migrate

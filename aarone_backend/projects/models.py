@@ -3,7 +3,7 @@ from django.db import models
 
 class Service(models.Model):
     name = models.CharField(max_length=50)
-    description = models.TextField(max_length=1000, blank=False)
+    description = models.TextField(max_length=1500, blank=False)
     icon = models.CharField(max_length=50, default="assets/images/icon/idea.png")
     def __str__(self):
         return self.name
@@ -24,6 +24,12 @@ class Image(models.Model):
 
     def __str__(self):
         return f"Image for {self.project.name}"
+
+class TestModel(models.Model):
+    name = models.CharField(max_length=50, blank=False)
+
+    def __str__(self):
+        return self.name
 
 
 
