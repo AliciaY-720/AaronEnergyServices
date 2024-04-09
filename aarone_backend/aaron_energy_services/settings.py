@@ -200,9 +200,9 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-# CORS_ORIGIN_WHITELIST = [
-#     'http://localhost:4200',
-# ]
+CORS_ORIGIN_WHITELIST = [
+    'https://purple-cliff-0e6e6330f.5.azurestaticapps.net',
+]
 
 STORAGES = {
     "default": {

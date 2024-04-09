@@ -9,8 +9,9 @@ import { IImage } from './iimage';
   providedIn: 'root'
 })
 export class ProjectService {
-  private baseUrl = 'http://localhost:8000/api/';
-
+  // private baseUrl = 'http://localhost:8000/api/';
+  private baseUrl = 'https://aaronenergyservices.azurewebsites.net/api/'
+  
   constructor(private http: HttpClient) { }
 
   getAllProjects(): Observable<IProject[]> {

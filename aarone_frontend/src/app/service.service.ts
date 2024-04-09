@@ -8,8 +8,9 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ServiceService {
-  private baseUrl = 'http://localhost:8000/api/';
-
+  // private baseUrl = 'http://localhost:8000/api/';
+  private baseUrl = 'https://aaronenergyservices.azurewebsites.net/api/'
+  
   constructor(private http: HttpClient) { }
 
   getAllServices(): Observable<IService[]> {
