@@ -10,7 +10,7 @@ class Service(models.Model):
 
 class Project(models.Model):
     name = models.CharField(max_length=50, blank=False)
-    description = models.TextField(max_length=1000, blank=False)
+    description = models.TextField(max_length=1500, blank=False)
     is_featured = models.BooleanField(blank=False, default=False)
     service = models.ForeignKey(Service, on_delete=models.SET_NULL, null=True)
 
