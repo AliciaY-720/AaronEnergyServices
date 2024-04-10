@@ -15,6 +15,7 @@ import { ProjectClassicComponent } from './pages/projects/project-classic/projec
 import { ProjectClassic2Component } from './pages/projects/project-classic2/project-classic2.component';
 import { ProjectDetailsComponent } from './pages/projects/project-details/project-details.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 const routes: Routes = [
   { path: '', component: Home1Component},
@@ -36,6 +37,9 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
+  ],
 })
 export class AppRoutingModule { }
