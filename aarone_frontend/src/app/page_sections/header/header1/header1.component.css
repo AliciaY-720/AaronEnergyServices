@@ -2,7 +2,7 @@
     .logo-header img {
         width: 100%
         ;  /* Adjust the width as needed */
-        height: 22px;/* Maintain aspect ratio */
+        height: 20px;/* Maintain aspect ratio */
         
         overflow: visible; 
     }
